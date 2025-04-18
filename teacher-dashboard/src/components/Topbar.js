@@ -1,10 +1,11 @@
-import React from 'react';
-import '../styles/teacher_dashboard.css';
+import React from "react";
+import "../styles/teacher_dashboard.css";
 
-const Topbar = () => {
+// Cho phép truyền title để tái sử dụng cho các trang khác
+const Topbar = ({ title = "Trang chủ" }) => {
   return (
     <div className="topbar">
-      <h2>Trang chủ</h2>
+      <h2>{title}</h2>
       <div className="topbar-right">
         <input type="text" placeholder="Tìm kiếm..." />
         <i className="fas fa-bell"></i>
